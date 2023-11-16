@@ -32,9 +32,7 @@ body{
 }
 .quiz_header{
     background-color: white;
-    width: 100%;
     box-shadow: 0px 0px 5px black;
-    border-radius: 2px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -52,24 +50,11 @@ body{
 }
 .user_icon i{
     font-size: 40px;
-    line-height: 50px;
     margin-right:90px ;
     color: rgb(77, 77, 238);
-    cursor: pointer;
 }
 
-.logout-btn{
-    width: 50%;
-    margin-right: 20px;
-    border: none;
-    outline: none;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-    background-color:rgb(77, 77, 238) ;
-    transition: .3s ease;
-}
+
 
 
 
@@ -190,8 +175,35 @@ body{
 
 
 
-
 @media (max-width: 768px){
+    .quiz_header .heading h1{
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    .user_details i{
+        margin-right: 40px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+}
+@media (max-width: 481px){
+    .btn{
+        margin-right: -40px;
+    }
+}
+@media (max-width: 320px){
+    .quiz_header .heading h1{
+        margin-left: 10px;
+        font-size: 25px;
+    }
+    .user_details i{
+        margin-right: 20px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+/* @media (max-width: 768px){
     .quiz_header .heading h1{
         margin-left: 20px;
         font-size: 30px;
@@ -251,4 +263,4 @@ body{
 
 
 }
-
+ */

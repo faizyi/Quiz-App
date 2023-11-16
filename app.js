@@ -118,7 +118,7 @@ let jsQuestions = [
         question: '17. JavaScript is the same as Java.',
         option1: 'True',
         option2: 'False',
-        option2: 'none',
+        option3: 'none',
         correctOption: "False"
     },
     {
@@ -203,6 +203,7 @@ function nextQuestion(){
     
     if(index > jsQuestions.length -1){
         showResultBox()
+        timer.style.display = 'none'
         // console.log(`Your Percentage is ${(score / jsQuestions.length)*100}%` );
     }else{
         qustions.textContent = jsQuestions[index].question
