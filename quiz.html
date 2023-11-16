@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<!-- Quiz Header -->
+<div class="quiz_header">
+
+    <div class="heading">
+        <h1>Quiz</h1>
+    </div>
+
+    <div class="user_details">
+
+    <div class="user_icon">
+        <i class="timer"></i>
+        <!-- <i  class='bx bxs-user'></i> -->
+    </div>
+
+    <div class="display">
+        <p class="uId"></p>
+        <button  class="logout-btn">Logout</button>
+    </div>
+
+</div>
+
+</div>
+
+
+
+
+
+    <!-- quiz Home -->
+    <div class="quiz_website">
+
+        <div class="quiz_question">
+            <p class="qustion"></p>
+        </div>
+
+        <div class="quiz_options" >
+            <div class="options">
+            <input onclick="clicked()" type="radio" value="1" name="options" id="select1"><label class="option1" for="select1"></label></div>
+            <div class="options">
+            <input onclick="clicked()" type="radio" value="2" name="options" id="select2"><label class="option2" for="select2"></label></div>
+            <div class="options">
+            <input onclick="clicked()" type="radio" value="3" name="options" id="select3"><label class="option3" for="select3"></label></div>
+        </div>
+
+        
+        <div class="quiz_btn">
+                <button disabled class="btn" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+
+
+
+<!-- Result Section -->
+<div class="main">
+    <div class="result_box" >
+
+        <div class="quiz_result">
+        <h2 class="result"></h2>
+        </div>
+
+        <div class="percentage_box">
+            <div class="ciecular_progress" >
+                <span class="percentage_value">0%</span>
+            </div>
+        </div>
+        <div class="trybtn">
+            <button class="home_btn">Go Home</button>
+        </div>
+    </div>
+    
+</div>
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
