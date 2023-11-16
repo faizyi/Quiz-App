@@ -108,11 +108,11 @@ let jsQuestions = [
         correctOption: 'Math.max(x, y)'
     },
     {
-        question: '16. What is the correct JavaScript syntax for opening a new window called "w2" ?',
-        option1: 'w2 = window.open("http://www.w3schools.com");',
-        option2: 'w2 = window.new("http://www.w3schools.com");',
-        option3: 'w2 = window.target("http://www.w3schools.com");',
-        correctOption: 'w2 = window.open("http://www.w3schools.com");'
+        question: '16. How to insert a comment that has more than one line?',
+        option1: '//This comment has more than one line;',
+        option2: '<!--This comment has more than one line-->;',
+        option3: '/*This comment has more than one line*/;',
+        correctOption: '/*This comment has more than one line*/;'
     },
     {
         question: '17. JavaScript is the same as Java.',
